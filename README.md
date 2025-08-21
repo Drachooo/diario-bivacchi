@@ -4,8 +4,8 @@ Informazioni e consigli sui bivacchi, basati sulle mie esperienze dirette. Non u
 
 ### Bivacchi Documentati
 
-* [Bivacco Malga Lavacchio](bivacchi/malga-lavacchio/malga-lavacchio.tex)
-* [Bivacco Casera P. X](bivacchi/casera-x/casera-x.tex)
+* [Bivacco Malga Lavacchio](bivacchi/malga-lavacchio/Malga-lavacchio.pdf)
+* [Bivacco Casera Vignolet](bivacchi/casera-vignolet/Casera-vignolet.pdf)
 * [Bivacco Y](bivacchi/bivacco-y/bivacco-y.tex)
 
 
