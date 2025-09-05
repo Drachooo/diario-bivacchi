@@ -5,8 +5,14 @@ Informazioni e consigli sui bivacchi, basati sulle mie esperienze dirette. Non u
 ### Bivacchi Documentati
 
 * [Bivacco Malga Lavacchio](./malga-lavacchio/Malga_Lavacchio.pdf)
-* [Bivacco Casera Vignolet](bivacchi/casera-vignolet/Casera_Vignolet.pdf)
-* [Bivacco Y](bivacchi/bivacco-y/bivacco-y.tex)
+* [Bivacco Malga Laresè di sotto](./malga-laresè_di_sotto/Malga-Laresè_di_sotto.pdf)
+  
+* [Bivacco Casera Vignolet](./casera-vignolet/Casera_Vignolet.pdf)
+* [Bivacco Casera Pian della Cenere](./casera-pian_della_cenere/Casera_Pian_della_Cenere.pdf)
+* [Bivacco Casera Trentin](./casera-trentin/Casera_Trentin.pdf)
+  
+* [Bivacco 3 Fontane](./bivacco-3_fontane/Bivacco_3_Fontane.pdf)
+* [Bivacco Vigolana](./bivacco-vigolana/Bivacco_Vigolana.pdf)
 
 
 ### Come Contribuire
