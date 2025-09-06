@@ -10,10 +10,10 @@ Informazioni e consigli sui bivacchi, basati sulle mie esperienze dirette. Non u
 * [Bivacco Casera Pian della Cenere](./casera-pian_della_cenere/Casera_Pian_della_Cenere.pdf)
 * [Bivacco Casera Trentin](./casera-trentin/Casera_Trentin.pdf)
 * [Bivacco Casera Vignolet](./casera-vignolet/Casera_Vignolet.pdf)
-   
-* [Bivacco Malga Lavacchio](./malga-lavacchio/Malga_Lavacchio.pdf)
-* [Bivacco Malga Laresè di sotto](./malga-larese_di_sotto/Malga-Larese_di_sotto.pdf)
+
 * [Bivacco Malga Fornasa Alta](./malga-fornasa_alta/Malga-Fornasa_Alta.pdf)
+* [Bivacco Malga Laresè di sotto](./malga-larese_di_sotto/Malga-Larese_di_sotto.pdf)
+* [Bivacco Malga Lavacchio](./malga-lavacchio/Malga_Lavacchio.pdf)
 * [Bivacco Malga Valletta Alta](./malga-valletta_alta/Malga-Valletta_Alta.pdf)
 
 ### Come Contribuire
