@@ -14,7 +14,7 @@ Informazioni e consigli sui bivacchi, basati sulle mie esperienze dirette. Non u
 * [Bivacco Malga Fornasa Alta](./malga-fornasa_alta/Malga-Fornasa_Alta.pdf)
 * [Bivacco Malga Laresè di sotto](./malga-larese_di_sotto/Malga-Larese_di_sotto.pdf)
 * [Bivacco Malga Lavacchio](./malga-lavacchio/Malga_Lavacchio.pdf)
-* [Bivacco Malga Valletta Alta](./malga-valletta_alta/Malga-Valletta_Alta.pdf)
+* [Bivacco Malga Valletta Alta](./malga-valletta_alta/Malga_Valletta_Alta.pdf)
 
 ### Come Contribuire
 Se hai informazioni su un bivacco o vuoi contribuire con le tue esperienze, sentiti libero di aprire una **Pull Request**.
