@@ -12,8 +12,9 @@ Informazioni e consigli sui bivacchi, basati sulle mie esperienze dirette. Non u
 * [Bivacco Casera Vignolet](./casera-vignolet/Casera_Vignolet.pdf)
 
 * [Bivacco Malga Fornasa Alta](./malga-fornasa_alta/Malga-Fornasa_Alta.pdf)
-* [Bivacco Malga Laresè di sotto](./malga-larese_di_sotto/Malga-Larese_di_sotto.pdf)
+* [Bivacco Malga Laresè di sotto](./malga-larese_di_sotto/Malga_Larese_di_sotto.pdf)
 * [Bivacco Malga Lavacchio](./malga-lavacchio/Malga_Lavacchio.pdf)
+* [Bivacco Malga Murelon](./malga-murelon/Malga_Murelon.pdf)
 * [Bivacco Malga Valletta Alta](./malga-valletta_alta/Malga_Valletta_Alta.pdf)
 
 ### Come Contribuire
