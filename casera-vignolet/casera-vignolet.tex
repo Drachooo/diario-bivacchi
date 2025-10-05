@@ -1,35 +1,58 @@
 \documentclass{article}
 
+% ==========================================================
+%  Pacchetti importati
+% ==========================================================
 \usepackage[italian]{babel}
 \usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{subcaption}
 \usepackage{textcomp}
+\usepackage{float}
 \usepackage{ragged2e}
-\usepackage[dvipsnames]{xcolor}
+\usepackage[export]{adjustbox}
+\usepackage[table, dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{tabularx}
 \usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[labelfont=bf, font=small]{caption}
+\usepackage{pifont}
+
+% ==========================================================
+% Informazioni pdf
+% ==========================================================
 \usepackage[colorlinks=true, allcolors=blue,
             pdfauthor={Matteo Drago},
-            pdftitle={Bivacco Casera Vignolet},
+            pdftitle={Casera Vignolet},
             pdfsubject={Diario bivacchi e trekking},
-            pdfkeywords={bivacco, montagna, trekking, diario}]{hyperref}
+            pdfkeywords={bivacco, montagna, trekking, diario},
+            pdfproducer={LaTeX},
+            pdfcreator={TeX Live 2025},
+            pdflang={it-IT},
+            pdfdisplaydoctitle=true,
+            pdfstartview=FitH,
+            pdfpagemode=UseOutlines]{hyperref}
 
-\title{\textbf{Bivacco Casera Vignolet - 1340 m s.l.m}}
+\title{\textbf{Casera Vignolet - 1340 m s.l.m}}
 \author{Matteo Drago}
 
 % ==========================================================
-% Impostazioni per il logo in ogni pagina
+%  Impostazioni per header e footer in ogni pagina
 % ==========================================================
 \pagestyle{fancy}
 \fancyhf{} % Pulisce tutti i campi di intestazione e piè di pagina
 \fancyhead[R]{\includegraphics[height=1.5cm]{images/toothless.jpeg}} % Posiziona il logo a destra (R) nell'intestazione
+\fancyfoot[C]{\small\itshape Casera Vignolet — Giugno 2024}
+\fancyfoot[R]{Pagina \thepage\ di \pageref{LastPage}} % lato destro
 \renewcommand{\headrulewidth}{0pt} % Rimuove la linea orizzontale nell'intestazione (opzionale)
 
+%==========================================================
 
 \begin{document}
 \maketitle
-\thispagestyle{fancy} % Aggiungi questa riga
+\thispagestyle{fancy}
 
 \begin{abstract}
 Questo documento raccoglie e organizza le informazioni che ho acquisito nel corso degli anni sui bivacchi, basate sulle mie esperienze dirette. Sebbene non si proponga come una guida esaustiva e perfetta, offre il minimo indispensabile per una buona vita in bivacco, con consigli pratici e diretti per chiunque desideri affrontare al meglio queste pazze ma piacevoli avventure.
@@ -43,23 +66,26 @@ Questo documento raccoglie e organizza le informazioni che ho acquisito nel cors
 \noindent
 \begin{minipage}[t]{0.45\textwidth}
   \vspace{0pt} % forza l'allineamento in alto
-  \includegraphics[width=\linewidth]{images/bivacco.jpg}
+  \includegraphics[width=\linewidth, frame]{images/bivacco.jpg}
 \end{minipage}%
 \hfill
 \begin{minipage}[t]{0.5\textwidth}
   \vspace{0pt} % forza l'allineamento in alto
-  
+
+  Regione\\
+  \textbf{\large Trentino-Alto Adige}
+  \\[1em] % Aggiunge una riga vuota qui
+  Provincia/Comune\\
+  \textbf{\large Trento / Avio}
+  \\[1em] % Aggiunge una riga vuota qui
   Gruppo montuoso\\
   \textbf{\large Monte Baldo}
   \\[1em] % Aggiunge una riga vuota qui
-  Località\\
-  \textbf{\large Monte Vignola – Prati di Vignoletto}
-  \\[1em] % Aggiunge una riga vuota qui
-  Comune\\  
-  \textbf{\large Avio}
-  \\[1em] % Aggiunge una riga vuota qui
-  Altezza\\  
+  Quota\\  
   \textbf{\large 1340 m s.l.m.}
+  \\[1em] % Aggiunge una riga vuota qui
+  Coordinate\\  
+  \textbf{\large \href{https://maps.google.com/?q=45.76261,10.96230}{45.76261° N, 10.96230° E} }
   \\[1em] % Aggiunge una riga vuota qui
   Apertura\\  
   \textbf{\large Non gestito, sempre aperto}
@@ -81,7 +107,7 @@ La presenza del lavello alleggerisce sicuramente il peso dello zaino.
 Ricavare la legna è molto semplice data la presenza di un vasto bosco seguendo il sentiero che da sul bivacco. Il posto offre una vista spettacolare sulla valle dell'Adige (il bivacco si posiziona infatti in mezzo a un prato che strapiomba sulla valle dell'Adige, proprio sulla verticale del castello di Avio).
 
 \section{Come ci siamo arrivati}
-Abbiamo parcheggiato la macchina a Polsa di Monte Baldo arrivando verso le 11.00 del mattino e da li ci siamo incamminati. Pausa pranzo lungo il sentiero per poi arrivare al bivacco. Il giorno dopo abbiamo proseguito il nostro giro ad anello per tornare alla macchina.
+Abbiamo parcheggiato la macchina a \href{https://maps.google.com/?q=45.784113191812516,10.94203653416266}{Polsa di Monte Baldo} arrivando verso le 10.00 del mattino e da li ci siamo incamminati. Pausa pranzo lungo il sentiero per poi arrivare al bivacco. Il giorno dopo abbiamo proseguito il nostro giro ad anello per tornare alla macchina.
 
 
 \begin{figure}[htbp!]
@@ -92,7 +118,10 @@ Abbiamo parcheggiato la macchina a Polsa di Monte Baldo arrivando verso le 11.00
         \vspace{0pt} % Forziamo l'allineamento in alto
         \includegraphics[width=\textwidth]{images/sentiero_mapsMe.jpg}
         \caption{Sentiero su Maps.Me.}
-        \label{fig:foto_lunga}
+        \vspace{2em}
+        \textbf{Percorso:}\\
+        Giorno 1: 8.18 km $\leftrightarrow$, 390 m $\uparrow$, 280 m $\downarrow$
+        Giorno 2: 5.83 km $\leftrightarrow$, 170 m $\uparrow$, 290 m $\downarrow$
     \end{subfigure}
     \hfill
     % Colonna di destra, allineata in alto
@@ -101,20 +130,22 @@ Abbiamo parcheggiato la macchina a Polsa di Monte Baldo arrivando verso le 11.00
         \vspace{0pt} % Forziamo l'allineamento in alto anche qui
         \includegraphics[width=\textwidth]{images/sentiero_komoot.png}
         \caption{Sentiero su Komoot.}
-        \label{fig:foto_corta1}
         \vspace{1em} % Aggiunge un po' di spazio tra le due foto
         \includegraphics[width=\textwidth]{images/profilo_altimetrico.png}
         \caption{Profilo altimetrico del percorso.}
-        \label{fig:foto_corta2}
     \end{subfigure}
     % Didascalia generale per l'intera figura
     \caption{Il sentiero e i dettagli del percorso.}
-    \label{fig:panoramica_dettagli}
 \end{figure}
 
 
+% ==========================================================
+%  Non ti scordar di me
+% ==========================================================
 \section{Non ti scordar di me}
-\textbf{\textcolor{BurntOrange}{Ricorda: il bivacco è un bene comune. Il suo futuro dipende dal rispetto e dal senso civico dei visitatori. Usalo con cura e lascialo più pulito di come l'hai trovato.}}
+\begin{tcolorbox}[colback=yellow!15!white, colframe=yellow!80!black]
+\textbf{\textcolor{BurntOrange}{Ricorda: il bivacco è un bene comune. Il suo futuro dipende dal rispetto e dal senso civico dei visitatori. Usalo con cura e lascialo più pulito di come l'hai trovato.}}    
+\end{tcolorbox}
 
 
 \section{Esperienza personale}
@@ -130,14 +161,12 @@ Siamo partiti dal parcheggio verso le 10.00 del mattino, il tempo non era bellis
         \centering
         \includegraphics[width=\linewidth]{images/foto_panchina.jpg}
         \caption{Sentiero.}
-        \label{fig:foto1}
     \end{subfigure}
     \hfill 
     \begin{subfigure}{0.45\textwidth}
         \centering
         \includegraphics[width=\linewidth]{images/foto_bivaccoEvallata.jpg}
         \caption{Vista del bivacco e della vallata.}
-        \label{fig:foto2}
     \end{subfigure}
     
     \vspace{2em} 
@@ -147,18 +176,45 @@ Siamo partiti dal parcheggio verso le 10.00 del mattino, il tempo non era bellis
         \centering
         \includegraphics[width=\linewidth]{images/foto_paesaggio.jpg}
         \caption{Paesaggio.}
-        \label{fig:foto3}
     \end{subfigure}
     \hfill 
     \begin{subfigure}{0.45\textwidth}
         \centering
         \includegraphics[width=\linewidth]{images/foto_vallataNotte.jpg}
         \caption{Vista della vallata di notte.}
-        \label{fig:foto4}
     \end{subfigure}
 
     \caption{Selezione di fotografie del percorso e della vista dal bivacco.}
-    \label{fig:panoramica_4_foto}
 \end{figure}
+
+
+\clearpage
+
+\section*{Tabella riepilogativa delle caratteristiche}
+
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\rowcolor{gray!15} \textbf{Caratteristica} & \textbf{Dettaglio} \\
+\hline
+Regione & Trentino-Alto Adige\\
+Provincia / Comune & Trento / Avio \\
+Gruppo montuoso & Monte Baldo \\
+Quota & 1340 m s.l.m. \\
+Apertura & Non gestito, sempre aperto \\
+Posti letto effettivi & 6 posti in letto a castello \\
+Presenze in visita & 6 persone \\
+Arredi & Tavolo, panche, camino esterno e camino interno \\
+Acqua & \ding{51} - Rubinetto esterno con acqua \\
+Servizi igienici & \ding{55} \\
+Copertura telefonica & \ding{51} \\
+Manutenzione / proprietà & Pubblico / CAI / Comune \\
+Visitato il & 1-2 giugno 2024\\
+\hline
+\end{tabularx}
+
+
+
+
+
 
 \end{document}
