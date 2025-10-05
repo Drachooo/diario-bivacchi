@@ -1,5 +1,8 @@
 \documentclass{article}
 
+% ==========================================================
+%  Pacchetti importati
+% ==========================================================
 \usepackage[italian]{babel}
 \usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
 \usepackage{amsmath}
@@ -8,23 +11,41 @@
 \usepackage{textcomp}
 \usepackage{float}
 \usepackage{ragged2e}
-\usepackage[dvipsnames]{xcolor}
+\usepackage[export]{adjustbox}
+\usepackage[table, dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{tabularx}
 \usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[labelfont=bf, font=small]{caption}
+\usepackage{pifont}
+
+% ==========================================================
+% Informazioni pdf
+% ==========================================================
 \usepackage[colorlinks=true, allcolors=blue,
             pdfauthor={Matteo Drago},
-            pdftitle={Casera Trentin},
+            pdftitle={Malga Murelon},
             pdfsubject={Diario bivacchi e trekking},
-            pdfkeywords={bivacco, montagna, trekking, diario}]{hyperref}
+            pdfkeywords={bivacco, montagna, trekking, diario},
+            pdfproducer={LaTeX},
+            pdfcreator={TeX Live 2025},
+            pdflang={it-IT},
+            pdfdisplaydoctitle=true,
+            pdfstartview=FitH,
+            pdfpagemode=UseOutlines]{hyperref}
                 
 \title{\textbf{Casera Trentin - 1964 m s.l.m}}
 \author{Matteo Drago}
 
 % ==========================================================
-% Impostazioni per il logo in ogni pagina
+%  Impostazioni per header e footer in ogni pagina
 % ==========================================================
 \pagestyle{fancy}
 \fancyhf{} % Pulisce tutti i campi di intestazione e piè di pagina
 \fancyhead[R]{\includegraphics[height=1.5cm]{images/toothless.jpeg}} % Posiziona il logo a destra (R) nell'intestazione
+\fancyfoot[C]{\small\itshape Casera Trentin — Dicembre 2023}
+\fancyfoot[R]{Pagina \thepage\ di \pageref{LastPage}} % lato destro
 \renewcommand{\headrulewidth}{0pt} % Rimuove la linea orizzontale nell'intestazione (opzionale)
 
 
@@ -32,6 +53,9 @@
 \maketitle
 \thispagestyle{fancy} % Aggiungi questa riga
 
+% ==========================================================
+%  Abstract
+% ==========================================================
 \begin{abstract}
 Questo documento raccoglie e organizza le informazioni che ho acquisito nel corso degli anni sui bivacchi, basate sulle mie esperienze dirette. Sebbene non si proponga come una guida esaustiva e perfetta, offre il minimo indispensabile per una buona vita in bivacco, con consigli pratici e diretti per chiunque desideri affrontare al meglio queste pazze ma piacevoli avventure.
 \end{abstract}
@@ -44,23 +68,26 @@ Questo documento raccoglie e organizza le informazioni che ho acquisito nel cors
 \noindent
 \begin{minipage}[t]{0.45\textwidth}
   \vspace{0pt} % forza l'allineamento in alto
-  \includegraphics[width=\linewidth]{images/bivacco.jpg}
+  \includegraphics[width=\linewidth, frame]{images/bivacco.jpg}
 \end{minipage}%
 \hfill
 \begin{minipage}[t]{0.5\textwidth}
   \vspace{0pt} % forza l'allineamento in alto
   
+  Regione\\
+  \textbf{\large Veneto}
+  \\[1em] % Aggiunge una riga vuota qui
+  Provincia/Comune\\
+  \textbf{\large Vicenza / Asiago}
+  \\[1em] % Aggiunge una riga vuota qui
   Gruppo montuoso\\
   \textbf{\large Altopiano dei 7 Comuni}
   \\[1em] % Aggiunge una riga vuota qui
-  Località\\
-  \textbf{\large Val Trentin}
-  \\[1em] % Aggiunge una riga vuota qui
-  Comune\\  
-  \textbf{\large Asiago (VI)}
-  \\[1em] % Aggiunge una riga vuota qui
-  Altezza\\  
+  Quota\\  
   \textbf{\large 1964 m s.l.m.}
+  \\[1em] % Aggiunge una riga vuota qui
+  Coordinate\\
+  \textbf{\large \href{https://maps.google.com/?q=45.96667,11.45000}{45.96667° N, 11.45000° E}}
   \\[1em] % Aggiunge una riga vuota qui
   Apertura\\  
   \textbf{\large Non gestito, sempre aperto}
@@ -85,7 +112,7 @@ Nelle zone limitrofe al bivacco non sono presenti fonti d’acqua (dovrebbe esss
 \section{Come ci siamo arrivati}
 Il bivacco è stato inserito in un giro di due giorni che comprendeva il Bivacco 3 Fontane e il Bivacco Casera Trentin.
 
-Abbiamo parcheggiato l’auto al bivio di Basa Senocio (1100 m s.l.m.) e da lì ci siamo incamminati fino a raggiungere il Bivacco 3 Fontane. Il giorno successivo siamo ripartiti in direzione del Bivacco Casera Trentin, abbiamo raggiunto il Bivio Italia dove abbiamo pranzato ed esplorato il piccolo bivacco presente sulla cima per poi ripartire e raggiungere la Casera. Il giorno successivo siamo ripariti per ritornare al parcheggio.
+Abbiamo parcheggiato l’auto al \href{https://maps.google.com/?q=45.92169696155084,11.476606212370115}{bivio di Basa Senocio} (1100 m s.l.m.) e da lì ci siamo incamminati fino a raggiungere il \href{https://maps.google.com/?q=45.96649411078783,11.494243131410462}{Bivacco 3 Fontane}. Il giorno successivo siamo ripartiti in direzione del \href{https://maps.google.com/?q=45.96667,11.45000}{Bivacco Casera Trentin}, abbiamo raggiunto il Bivio Italia dove abbiamo pranzato ed esplorato il piccolo bivacco presente sulla cima per poi ripartire e raggiungere la Casera. Il giorno successivo siamo ripariti per ritornare al parcheggio.
 
 
 \begin{figure}[htbp!]
@@ -96,7 +123,12 @@ Abbiamo parcheggiato l’auto al bivio di Basa Senocio (1100 m s.l.m.) e da lì 
         \vspace{0pt} % Forziamo l'allineamento in alto
         \includegraphics[width=\textwidth]{images/sentiero_mapsMe.jpg}
         \caption{Sentiero su Maps.Me.}
-        \label{fig:foto_lunga}
+        \vspace{2em}
+        \textbf{Percorso:}\\
+        Giorno 1: 6.64 km $\leftrightarrow$, 660 m $\uparrow$, 0 m $\downarrow$\\
+        Giorno 2: 5.24 km $\leftrightarrow$, 280 m $\uparrow$, 180 m $\downarrow$
+        Giorno 3: 7.59 km $\leftrightarrow$, 0 m $\uparrow$, 760 m $\downarrow$
+
     \end{subfigure}
     \hfill
     % Colonna di destra, allineata in alto
@@ -105,20 +137,22 @@ Abbiamo parcheggiato l’auto al bivio di Basa Senocio (1100 m s.l.m.) e da lì 
         \vspace{0pt} % Forziamo l'allineamento in alto anche qui
         \includegraphics[width=\textwidth]{images/sentiero_komoot.png}
         \caption{Sentiero su Komoot.}
-        \label{fig:foto_corta1}
         \vspace{1em} % Aggiunge un po' di spazio tra le due foto
         \includegraphics[width=\textwidth]{images/profilo_altimetrico.jpg}
         \caption{Profilo altimetrico del percorso.}
-        \label{fig:foto_corta2}
     \end{subfigure}
     % Didascalia generale per l'intera figura
     \caption{Il sentiero e i dettagli del percorso.}
-    \label{fig:panoramica_dettagli}
 \end{figure}
 
 
+% ==========================================================
+%  Non ti scordar di me
+% ==========================================================
 \section{Non ti scordar di me}
-\textbf{\textcolor{BurntOrange}{Ricorda: il bivacco è un bene comune. Il suo futuro dipende dal rispetto e dal senso civico dei visitatori. Usalo con cura e lascialo più pulito di come l'hai trovato.}}
+\begin{tcolorbox}[colback=yellow!15!white, colframe=yellow!80!black]
+\textbf{\textcolor{BurntOrange}{Ricorda: il bivacco è un bene comune. Il suo futuro dipende dal rispetto e dal senso civico dei visitatori. Usalo con cura e lascialo più pulito di come l'hai trovato.}}    
+\end{tcolorbox}
 
 
 \section{Esperienza personale}
@@ -143,7 +177,6 @@ Siamo partiti dal bivacco 3 Fontane in direzione del Bivacco Casera Trentin, abb
         \caption{Paesaggio.}
     \end{subfigure}
 
-    \caption{Alcune foto.}
 \end{figure}
 
 
@@ -160,8 +193,38 @@ Siamo partiti dal bivacco 3 Fontane in direzione del Bivacco Casera Trentin, abb
         \caption{Vista al tramonto.}
     \end{subfigure}
     \hfill
-
+    
+    % setto il counter delle figure
+    \setcounter{figure}{2}
     \caption{Selezione di fotografie del percorso e della vista dal bivacco.}
 \end{figure}
+
+\clearpage
+
+\section*{Tabella riepilogativa delle caratteristiche}
+
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\rowcolor{gray!15} \textbf{Caratteristica} & \textbf{Dettaglio} \\
+\hline
+Regione & Veneto\\
+Provincia / Comune & Vicenza / Asiago \\
+Gruppo montuoso & Altopiano dei 7 Comuni \\
+Quota & 1964 m s.l.m. \\
+Apertura & Non gestito, sempre aperto \\
+Posti letto effettivi & 20 brande \\
+Presenze in visita & 15 persone \\
+Arredi & Tavolo, panche, camino, stufa, poltrona\\
+Acqua & \ding{55} - Indicati vari punti acqua ma non ne abbiamo trovati \\
+Servizi igienici & \ding{55} \\
+Copertura telefonica & \ding{55} \\
+Manutenzione / proprietà & Pubblico / CAI / Comune \\
+Visitato il & 27-28-29 dicembre 2023\\
+\hline
+\end{tabularx}
+
+
+
+
 
 \end{document}
