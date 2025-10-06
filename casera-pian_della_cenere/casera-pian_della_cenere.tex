@@ -1,36 +1,63 @@
 \documentclass{article}
 
+% ==========================================================
+%  Pacchetti importati
+% ==========================================================
 \usepackage[italian]{babel}
 \usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{subcaption}
 \usepackage{textcomp}
+\usepackage{float}
 \usepackage{ragged2e}
-\usepackage[dvipsnames]{xcolor}
+\usepackage[export]{adjustbox}
+\usepackage[table, dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{tabularx}
 \usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[labelfont=bf, font=small]{caption}
+\usepackage{pifont}
+
+% ==========================================================
+% Informazioni pdf
+% ==========================================================
 \usepackage[colorlinks=true, allcolors=blue,
             pdfauthor={Matteo Drago},
-            pdftitle={Bivacco Casera Pian della Cenere},
+            pdftitle={Casera Pian della Cenere},
             pdfsubject={Diario bivacchi e trekking},
-            pdfkeywords={bivacco, montagna, trekking, diario}]{hyperref}
+            pdfkeywords={bivacco, montagna, trekking, diario},
+            pdfproducer={LaTeX},
+            pdfcreator={TeX Live 2025},
+            pdflang={it-IT},
+            pdfdisplaydoctitle=true,
+            pdfstartview=FitH,
+            pdfpagemode=UseOutlines]{hyperref}
 
-\title{\textbf{Bivacco Casera Pian della Cenere - 1012 metri s.l.m}}
+\title{\textbf{Casera Pian della Cenere - 1012 metri s.l.m}}
 \author{Matteo Drago}
 
 % ==========================================================
-% Impostazioni per il logo in ogni pagina
+%  Impostazioni per header e footer in ogni pagina
 % ==========================================================
 \pagestyle{fancy}
 \fancyhf{} % Pulisce tutti i campi di intestazione e piè di pagina
 \fancyhead[R]{\includegraphics[height=1.5cm]{images/toothless.jpeg}} % Posiziona il logo a destra (R) nell'intestazione
+\fancyfoot[C]{\small\itshape Casera Pian della Cenere}
+\fancyfoot[R]{Pagina \thepage\ di \pageref{LastPage}} % lato destro
 \renewcommand{\headrulewidth}{0pt} % Rimuove la linea orizzontale nell'intestazione (opzionale)
+
+%==========================================================
 
 
 \begin{document}
 \maketitle
 \thispagestyle{fancy} % Aggiungi questa riga
 
+% ==========================================================
+%  Abstract
+% ==========================================================
 \begin{abstract}
 Questo documento raccoglie e organizza le informazioni che ho acquisito nel corso degli anni sui bivacchi, basate sulle mie esperienze dirette. Sebbene non si proponga come una guida esaustiva e perfetta, offre il minimo indispensabile per una buona vita in bivacco, con consigli pratici e diretti per chiunque desideri affrontare al meglio queste pazze ma piacevoli avventure.
 \end{abstract}
@@ -43,23 +70,26 @@ Questo documento raccoglie e organizza le informazioni che ho acquisito nel cors
 \noindent
 \begin{minipage}[t]{0.45\textwidth}
   \vspace{0pt} % forza l'allineamento in alto
-\includegraphics[width=\linewidth,height=8cm,keepaspectratio]{images/bivacco.jpg}
+\includegraphics[width=\linewidth,height=8cm,keepaspectratio, frame]{images/bivacco.jpg}
 \end{minipage}%
 \hfill
 \begin{minipage}[t]{0.5\textwidth}
   \vspace{0pt} % forza l'allineamento in alto
   
+  Regione\\  
+  \textbf{\large Trentino-Alto Adige}
+  \\[1em] % Aggiunge una riga vuota qui
+  Provincia/Comune\\  
+  \textbf{\large Trento / Avio}
+  \\[1em] % Aggiunge una riga vuota qui
   Gruppo montuoso\\
   \textbf{\large Monte Baldo}
   \\[1em] % Aggiunge una riga vuota qui
-  Località\\
-  \textbf{\large Pian della Cenere}
-  \\[1em] % Aggiunge una riga vuota qui
-  Comune\\  
-  \textbf{\large Avio}
-  \\[1em] % Aggiunge una riga vuota qui
-  Altezza\\  
+  Quota\\  
   \textbf{\large 1012 m s.l.m.}
+  \\[1em] % Aggiunge una riga vuota qui
+  Coordinate\\  
+  \textbf{\large \href{https://maps.google.com/?q=45.72783,10.88464}{45.72783° N, 10.88464° E}}
   \\[1em] % Aggiunge una riga vuota qui
   Apertura\\  
   \textbf{\large Non gestito, sempre aperto}
@@ -83,9 +113,6 @@ Ricavare la legna non è complesso dal momento che il bivacco è circondato dal 
 \section{Come ci siamo arrivati}
 \subsection{Giro 1}
 Abbiamo trovato il bivacco mentre terminavamo il giro del bivacco malga-Lavacchio, è quindi possibile raggiungerlo percorrendo gli stessi sentieri.
-
-\subsection{Giro 2}
-In prossimità della casera si trova la Via Ferrata Gerardo Sega, un itinerario di livello intermedio situato nella Valle dei Mulini, con cenge esposte e tratti nel bosco che conducono al Monte Coalaz. Tuttavia causa maltempo non siamo riusciti a percorrerlo. È possibile raggiungere il bivacco anche in macchina, parcheggiando vicino alla malga che si erge vicino al bivacco.
 
 
 \begin{figure}[htbp!]
@@ -116,9 +143,17 @@ In prossimità della casera si trova la Via Ferrata Gerardo Sega, un itinerario 
     \label{fig:panoramica_dettagli}
 \end{figure}
 
+\subsection{Giro 2}
+In prossimità della casera si trova la Via Ferrata Gerardo Sega, un itinerario di livello intermedio situato nella Valle dei Mulini, con cenge esposte e tratti nel bosco che conducono al Monte Coalaz. Tuttavia causa maltempo non siamo riusciti a percorrerlo. È possibile raggiungere il bivacco anche in macchina, parcheggiando vicino alla malga che si erge vicino al bivacco.
 
+
+% ==========================================================
+%  Non ti scordar di me
+% ==========================================================
 \section{Non ti scordar di me}
-\textbf{\textcolor{BurntOrange}{Ricorda: il bivacco è un bene comune. Il suo futuro dipende dal rispetto e dal senso civico dei visitatori. Usalo con cura e lascialo più pulito di come l'hai trovato.}}
+\begin{tcolorbox}[colback=yellow!15!white, colframe=yellow!80!black]
+\textbf{\textcolor{BurntOrange}{Ricorda: il bivacco è un bene comune. Il suo futuro dipende dal rispetto e dal senso civico dei visitatori. Usalo con cura e lascialo più pulito di come l'hai trovato.}}    
+\end{tcolorbox}
 
 
 \section{Alcune foto}
@@ -160,5 +195,32 @@ In prossimità della casera si trova la Via Ferrata Gerardo Sega, un itinerario 
     \caption{Selezione di fotografie del percorso e della vista dal bivacco.}
     \label{fig:panoramica_4_foto}
 \end{figure}
+
+\clearpage
+
+\section*{Tabella riepilogativa delle caratteristiche}
+
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\rowcolor{gray!15} \textbf{Caratteristica} & \textbf{Dettaglio} \\
+\hline
+Regione & Trentino-Alto Adige\\
+Provincia / Comune & Trento / Avio \\
+Gruppo montuoso & Monte Baldo \\
+Quota & 1012 m s.l.m. \\
+Apertura & Non gestito, sempre aperto \\
+Posti letto effettivi & Assenti \\
+Presenze in visita & 15 persone \\
+Arredi & Tavolo, panche, camino \\
+Acqua & \ding{55} - Abbeveratorio esterno\\
+Servizi igienici & \ding{55} \\
+Copertura telefonica & \ding{55} - Poca in alcuni punti \\
+Manutenzione / proprietà & Pubblico / CAI / Comune \\
+Visitato il & 9-10 dicembre 2023 e 17-18 febbraio 2024\\
+\hline
+\end{tabularx}
+
+
+
 
 \end{document}
