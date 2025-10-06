@@ -1,36 +1,63 @@
 \documentclass{article}
 
+% ==========================================================
+%  Pacchetti importati
+% ==========================================================
 \usepackage[italian]{babel}
 \usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{subcaption}
 \usepackage{textcomp}
+\usepackage{float}
 \usepackage{ragged2e}
-\usepackage[dvipsnames]{xcolor}
+\usepackage[export]{adjustbox}
+\usepackage[table, dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{tabularx}
 \usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[labelfont=bf, font=small]{caption}
+\usepackage{pifont}
+
+% ==========================================================
+% Informazioni pdf
+% ==========================================================
 \usepackage[colorlinks=true, allcolors=blue,
             pdfauthor={Matteo Drago},
             pdftitle={Bivacco Vigolana "alla Madonnina" o Giacomelli},
             pdfsubject={Diario bivacchi e trekking},
-            pdfkeywords={bivacco, montagna, trekking, diario}]{hyperref}
+            pdfkeywords={bivacco, montagna, trekking, diario},
+            pdfproducer={LaTeX},
+            pdfcreator={TeX Live 2025},
+            pdflang={it-IT},
+            pdfdisplaydoctitle=true,
+            pdfstartview=FitH,
+            pdfpagemode=UseOutlines]{hyperref}
 
 \title{\textbf{Bivacco Vigolana “alla Madonnina” o Bivacco Giacomelli - 2030 m s.l.m}}
 \author{Matteo Drago}
 
 % ==========================================================
-% Impostazioni per il logo in ogni pagina
+%  Impostazioni per header e footer in ogni pagina
 % ==========================================================
 \pagestyle{fancy}
 \fancyhf{} % Pulisce tutti i campi di intestazione e piè di pagina
 \fancyhead[R]{\includegraphics[height=1.5cm]{images/toothless.jpeg}} % Posiziona il logo a destra (R) nell'intestazione
+\fancyfoot[C]{\small\itshape Bivacco Vigolana — Luglio 2025}
+\fancyfoot[R]{Pagina \thepage\ di \pageref{LastPage}} % lato destro
 \renewcommand{\headrulewidth}{0pt} % Rimuove la linea orizzontale nell'intestazione (opzionale)
+
+%==========================================================
 
 
 \begin{document}
 \maketitle
 \thispagestyle{fancy} % Aggiungi questa riga
 
+% ==========================================================
+%  Abstract
+% ==========================================================
 \begin{abstract}
 Questo documento raccoglie e organizza le informazioni che ho acquisito nel corso degli anni sui bivacchi, basate sulle mie esperienze dirette. Sebbene non si proponga come una guida esaustiva e perfetta, offre il minimo indispensabile per una buona vita in bivacco, con consigli pratici e diretti per chiunque desideri affrontare al meglio queste pazze ma piacevoli avventure.
 \end{abstract}
@@ -43,23 +70,26 @@ Questo documento raccoglie e organizza le informazioni che ho acquisito nel cors
 \noindent
 \begin{minipage}[t]{0.45\textwidth}
   \vspace{0pt} % forza l'allineamento in alto
-  \includegraphics[width=\linewidth]{images/bivacco.jpg}
+  \includegraphics[width=\linewidth, frame]{images/bivacco.jpg}
 \end{minipage}%
 \hfill
 \begin{minipage}[t]{0.5\textwidth}
   \vspace{0pt} % forza l'allineamento in alto
-  
+
+  Regione\\
+  \textbf{\large Trentino-Alto Adige}
+  \\[1em] % Aggiunge una riga vuota qui
+  Provincia/Comune\\
+  \textbf{\large Trento / Altopiano della Vigolana}
+  \\[1em] % Aggiunge una riga vuota qui
   Gruppo montuoso\\
   \textbf{\large Monte Vigolana}
   \\[1em] % Aggiunge una riga vuota qui
-  Località\\
-  \textbf{\large Altopiano della Vigolana}
-  \\[1em] % Aggiunge una riga vuota qui
-  Comune\\  
-  \textbf{\large Vigolo Vattaro}
-  \\[1em] % Aggiunge una riga vuota qui
-  Altezza\\  
+  Quota\\  
   \textbf{\large 2030 m s.l.m.}
+  \\[1em] % Aggiunge una riga vuota qui
+  Coordinate\\
+  \textbf{\large \href{https://maps.google.com/?q=45.97110, 11.18603}{45.97110° N, 11.18603° E}}
   \\[1em] % Aggiunge una riga vuota qui
   Apertura\\  
   \textbf{\large Non gestito, sempre aperto}
@@ -82,7 +112,7 @@ La vista esterna è straordinaria, si può osservare l'Altopiano della Vigolana,
 Non sono presenti veri e propri punti acqua.
 
 \section{Come ci siamo arrivati}
-Abbiamo parcheggiato la macchina a Malga Faè - Malga Doss del Bue, e da lì parte un sentiero che in poco tempo conduce alla "Polsa", un piccolo pianoro ombreggiato adatto ad una pausa veloce mentre ci si gode la vista, che rappresenta circa metà percorso. La salita al bivacco è abbastanza impegnativa, l'ascesa richiede un certo impegno fisico soprattutto nella parte finale, quando il sentiero nel bosco termina ed inizia una parte abbastanza esposta su roccia.
+Abbiamo parcheggiato la macchina a Malga Faè - \href{https://maps.google.com/?q=45.9830253914458, 11.205372344457928}{Malga Doss del Bue}, e da lì parte un sentiero che in poco tempo conduce alla "Polsa", un piccolo pianoro ombreggiato adatto ad una pausa veloce mentre ci si gode la vista, che rappresenta circa metà percorso. La salita al bivacco è abbastanza impegnativa, l'ascesa richiede un certo impegno fisico soprattutto nella parte finale, quando il sentiero nel bosco termina ed inizia una parte abbastanza esposta su roccia.
 
 
 
@@ -94,7 +124,10 @@ Abbiamo parcheggiato la macchina a Malga Faè - Malga Doss del Bue, e da lì par
         \vspace{0pt} % Forziamo l'allineamento in alto
         \includegraphics[width=\textwidth]{images/sentiero_mapsMe.jpg}
         \caption{Sentiero su Maps.Me.}
-        \label{fig:foto_lunga}
+        \vspace{2em}
+        \textbf{Percorso:}\\
+        Giorno 1: 3.26 km $\leftrightarrow$, 920 m $\uparrow$, 20 m $\downarrow$
+        Giorno 2: 8.63 km $\leftrightarrow$, 170 m $\uparrow$, 1100 m $\downarrow$
     \end{subfigure}
     \hfill
     % Colonna di destra, allineata in alto
@@ -103,26 +136,28 @@ Abbiamo parcheggiato la macchina a Malga Faè - Malga Doss del Bue, e da lì par
         \vspace{0pt} % Forziamo l'allineamento in alto anche qui
         \includegraphics[width=\textwidth]{images/sentiero_komoot.png}
         \caption{Sentiero su Komoot.}
-        \label{fig:foto_corta1}
         \vspace{1em} % Aggiunge un po' di spazio tra le due foto
         \includegraphics[width=\textwidth]{images/profilo_altimetrico.jpg}
         \caption{Profilo altimetrico del percorso.}
-        \label{fig:foto_corta2}
     \end{subfigure}
     % Didascalia generale per l'intera figura
     \caption{Il sentiero e i dettagli del percorso.}
-    \label{fig:panoramica_dettagli}
 \end{figure}
 
 
+% ==========================================================
+%  Non ti scordar di me
+% ==========================================================
 \section{Non ti scordar di me}
-\textbf{\textcolor{BurntOrange}{Ricorda: il bivacco è un bene comune. Il suo futuro dipende dal rispetto e dal senso civico dei visitatori. Usalo con cura e lascialo più pulito di come l'hai trovato.}}
+\begin{tcolorbox}[colback=yellow!15!white, colframe=yellow!80!black]
+\textbf{\textcolor{BurntOrange}{Ricorda: il bivacco è un bene comune. Il suo futuro dipende dal rispetto e dal senso civico dei visitatori. Usalo con cura e lascialo più pulito di come l'hai trovato.}}    
+\end{tcolorbox}
 
 
 \section{Esperienza personale}
-Siamo arrivati al parcheggio verso le 12.00, avevamo due obiettivi principali: scaldare il pane sulla brace e riuscire ad arrivare al bivacco prima che arrivasse da piovere. Spoiler: non siamo riusciti a fare nessuna delle due cose. 
+Siamo arrivati al parcheggio verso le 12.00, avevamo due obiettivi principali: scaldare il pane sulla brace e riuscire ad arrivare al bivacco prima che arrivasse da piovere. \textbf{Spoiler:} non siamo riusciti a fare nessuna delle due cose. 
 
-Mentre salivamo abbiamo incontrato il soccorso alpino che ci ha avvisati di prestare attenzione durante la salita perché da lì a poco avrebbe piovuto. Secondo me ce l'hanno gufata: da lì a poco ha iniziato a piovvigginare, fortunatamente i primi 500-600 metri di salita sono all'interno di un bosco, quindi l'acqua che ci prendeva era effettivamente poca. Sicuramente il caldo non aiutava però la prima parte di salita è passata in fretta. I problemi sono arrivati finito questo tratto. È iniziato un sentiero esposto su roccia e per nostra sfortunata ha iniziato a diluviare. È stata la salita più complessa che abbia mai affrontato: scendeva letteralmente un fiume dalla roccia mentre salivamo (a ripensarsi abbiamo fatto una gran cavolata ma siamo stati fortunati). Il bello di tutto ciò non è solo che, appena entrati nel bivacco, ha smesso di piovere ed è tornato il sole, ma anche che, dei 17 presenti quella sera, gli unici ad aver preso l’acqua siamo stati noi cinque. In bivacco abbiamo dormito all'interno in 15, con 2 ragazzi fuori.
+Mentre salivamo abbiamo incontrato il soccorso alpino che ci ha avvisati di prestare attenzione durante la salita perché da lì a poco avrebbe piovuto. Secondo me ce l'hanno gufata: da lì a poco ha iniziato a piovvigginare, fortunatamente i primi 500-600 metri di salita sono all'interno di un bosco, quindi l'acqua che ci prendeva era effettivamente poca. Sicuramente il caldo non aiutava però la prima parte di salita è passata in fretta. I problemi sono arrivati finito questo tratto. È iniziato un sentiero esposto su roccia e per nostra sfortunata ha iniziato a diluviare. È stata la salita più complessa che abbia mai affrontato: scendeva letteralmente un fiume dalla roccia mentre salivamo (a ripensarsi abbiamo fatto una gran cavolata ma siamo stati fortunati). Il bello di tutto ciò non è solo che, appena entrati nel bivacco, ha smesso di piovere ed è tornato il sole, ma anche che, dei 17 presenti quella sera, gli unici ad aver preso l’acqua siamo stati noi tre. In bivacco abbiamo dormito all'interno in 15, con 2 ragazzi fuori.
 Siamo anche riusciti a recuperare un po' d'acqua, in quanto, proseguendo verso la via Ferrata si incontra un tratto di roccia da cui sgorga acqua. Non so se si tratti di una vera fonte o semplicemente di accumuli dovuti alla pioggia: comunque non ci farei troppo affidamento.
 Il ritorno il giorno seguente è stato abbastanza semplice, abbiamo raggiunto il Becco di Filadonna e poi siamo tornati a valle.
 
@@ -165,7 +200,34 @@ Il ritorno il giorno seguente è stato abbastanza semplice, abbiamo raggiunto il
         \includegraphics[width=\textwidth]{images/foto_bivacco.jpg}
         \caption{Vista dalla cima.}
     \end{subfigure}
+
+    % setto il counter delle figure
+    \setcounter{figure}{2}
     \caption{Selezione di fotografie del percorso e della vista dal bivacco.}
 \end{figure}
+
+\clearpage
+
+\section*{Tabella riepilogativa delle caratteristiche}
+
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\rowcolor{gray!15} \textbf{Caratteristica} & \textbf{Dettaglio} \\
+\hline
+Regione & Trentino-Alto Adige\\
+Provincia / Comune & Trento / Altopiano della Vigolana \\
+Gruppo montuoso & Monte Vigolana \\
+Quota & 2030 m s.l.m. \\
+Apertura & Non gestito, sempre aperto \\
+Posti letto effettivi & 8 posti su letti a castello e soppalco \\
+Presenze in visita & 17 persone \\
+Arredi & Tavolo, panche, (stufa murata, non utilizzabile) \\
+Acqua & \ding{55} \\
+Servizi igienici & \ding{55} \\
+Copertura telefonica & \ding{55} - Poca e solo in alcuni punti \\
+Manutenzione / proprietà & Pubblico / CAI / Comune \\
+Visitato il & 21-22 luglio 2025\\
+\hline
+\end{tabularx}
 
 \end{document}
