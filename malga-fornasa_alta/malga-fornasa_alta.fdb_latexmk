@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1778010643.12668 "c:/Users/matteo/Desktop/DragoPersonale/bivacchi/malga-fornasa_alta/malga-fornasa_alta.tex" "malga-fornasa_alta.pdf" "malga-fornasa_alta" 1778010649.86033 0
-  "C:/Users/matteo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1774192558 82684 3a87f55ef758bc5fe6abfed9a40cca26 ""
+["pdflatex"] 1792010978.88159 "c:/Users/matteo/Desktop/DragoPersonale/bivacchi/malga-fornasa_alta/malga-fornasa_alta.tex" "malga-fornasa_alta.pdf" "malga-fornasa_alta" 1792010981.91237 0
+  "C:/Users/matteo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1788358559 82684 3a87f55ef758bc5fe6abfed9a40cca26 ""
   "C:/Users/matteo/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcbx1200.pk" 1759854073 15080 d410434cb28d8747d1948e638803e5e6 ""
   "C:/Users/matteo/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1759854072 11548 472cd8c3f5a8bd564146b886f6a923d3 ""
   "C:/Users/matteo/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1761759546 13322352 444e7a2725f3d87de4b1c0b63bd6f16e ""
@@ -185,7 +185,7 @@
   "C:/Users/matteo/AppData/Local/Programs/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238469540 10894 d359a13923460b2a73d4312d613554c8 ""
   "C:/Users/matteo/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/matteo/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "c:/Users/matteo/Desktop/DragoPersonale/bivacchi/malga-fornasa_alta/malga-fornasa_alta.tex" 1778010636 13838 d38873821fd55edfd11858308209665e ""
+  "c:/Users/matteo/Desktop/DragoPersonale/bivacchi/malga-fornasa_alta/malga-fornasa_alta.tex" 1792010977 13838 d38873821fd55edfd11858308209665e ""
   "images/bivacco.jpg" 1757156502 1660244 b41af246b837e7cd2d0c532df1fd5a5a ""
   "images/foto_bivacco.jpg" 1757156500 1000491 97637e646deebb0606fe036ead256c8d ""
   "images/foto_estiva.jpg" 1757156496 176215 ae88e5ede92f474bdbce75b2d0bf7a48 ""
@@ -201,9 +201,9 @@
   "images/sentiero_mapsMe_Giro1.jpg" 1757156456 258717 5d7ec8232e5d431fbf33850143d2466c ""
   "images/sentiero_mapsMe_Giro2.jpg" 1757156453 185690 105786ebb917971bdf274175ae59663f ""
   "images/toothless.jpeg" 1757156450 22468 ff3a1fd9ceab6d7586fb5f934b29138a ""
-  "malga-fornasa_alta.aux" 1778010647 2162 caa32f58c66a16663ab663dec8d2987f "pdflatex"
-  "malga-fornasa_alta.out" 1778010647 1798 23da8a21a4641158efbc03601cb63d4b "pdflatex"
-  "malga-fornasa_alta.tex" 1778010636 13838 d38873821fd55edfd11858308209665e ""
+  "malga-fornasa_alta.aux" 1792010981 2162 caa32f58c66a16663ab663dec8d2987f "pdflatex"
+  "malga-fornasa_alta.out" 1792010981 1798 23da8a21a4641158efbc03601cb63d4b "pdflatex"
+  "malga-fornasa_alta.tex" 1792010977 13838 d38873821fd55edfd11858308209665e ""
   (generated)
   "malga-fornasa_alta.aux"
   "malga-fornasa_alta.log"
