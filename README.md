@@ -4,15 +4,18 @@ Informazioni su bivacchi e/o giri in montagna, basati sulle mie esperienze diret
 
 ### Bivacchi Documentati
 
-* [Bivacco 3 Fontane](./bivacco-3_fontane/Bivacco_3_Fontane.pdf)
-* [Bivacco Vigolana](./bivacco-vigolana/Bivacco_Vigolana.pdf)
+* [Bivacco 3 Fontane](./bivacco-3_fontane/bivacco-3_fontane.pdf)
+* [Bivacco Raffaele Bailoni](./bivacco-raffaele_bailoni/bivacco-raffaele_bailoni.pdf)
+* [Bivacco Pozze](./bivacco-pozze/bivacco-pozze.pdf)
+* [Bivacco Vigolana](./bivacco-vigolana/bivacco-vigolana.pdf)
 
-* [Bivacco Casera Pian della Cenere](./casera-pian_della_cenere/Casera_Pian_della_Cenere.pdf)
-* [Bivacco Casera Trentin](./casera-trentin/Casera_Trentin.pdf)
-* [Bivacco Casera Vignolet](./casera-vignolet/Casera_Vignolet.pdf)
 
-* [Bivacco Malga Fornasa Alta](./malga-fornasa_alta/Malga-Fornasa_Alta.pdf)
-* [Bivacco Malga Laresè di sotto](./malga-larese_di_sotto/Malga_Larese_di_sotto.pdf)
-* [Bivacco Malga Lavacchio](./malga-lavacchio/Malga_Lavacchio_compress.pdf)
-* [Bivacco Malga Murelon](./malga-murelon/Malga_Murelon.pdf)
-* [Bivacco Malga Valletta Alta](./malga-valletta_alta/Malga_Valletta_Alta.pdf)
+* [Bivacco Casera Pian della Cenere](./casera-pian_della_cenere/casera-pian_della_cenere.pdf)
+* [Bivacco Casera Trentin](./casera-trentin/casera-trentin.pdf)
+* [Bivacco Casera Vignolet](./casera-vignolet/casera-vignolet.pdf)
+
+* [Bivacco Malga Fornasa Alta](./malga-fornasa_alta/malga-fornasa_alta.pdf)
+* [Bivacco Malga Laresè di sotto](./malga-larese_di_sotto/malga-larese_di_sotto.pdf)
+* [Bivacco Malga Lavacchio](./malga-lavacchio/malga-lavacchio.pdf)
+* [Bivacco Malga Murelon](./malga-murelon/malga_murelon.pdf)
+* [Bivacco Malga Valletta Alta](./malga-valletta_alta/malga-valletta_alta.pdf)
